@@ -58,12 +58,12 @@ The table to be used will be rendered this way:
 This is basically the hole logic behind.
 Here is a demonstration that should include all possibilities:
 
-.. include:: tests/index.lua
+include::tests/index.lua
 
 And here is how i made the partial view:
 
-.. include:: tests/partials/testpartial.lua
+include::tests/partials/testpartial.lua
 
 Then on a main file, I just printed the results
 
-.. include:: tests/test.lua
+include::tests/test.lua
