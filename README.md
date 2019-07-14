@@ -55,7 +55,7 @@ The table to be used will be rendered this way:
 * *if the last item is not a children, the tag will self close* 
 * *if the last item is a "false" the tag will not self close with /*
 
-This is basically the hole logic behind.
+This is basically the whole logic behind.
 Here is a demonstration that should include all possibilities:
 
     local testpartial = require('./partials/testpartial')
