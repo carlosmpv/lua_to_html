@@ -58,12 +58,52 @@ The table to be used will be rendered this way:
 This is basically the hole logic behind.
 Here is a demonstration that should include all possibilities:
 
-.. include:: tests/index.lua
+    local testpartial = require('./partials/testpartial')
+    local IndexPage = {
+        {'!DOCTYPE html', false},
+        {'html', lang='en-US', {
+            {'head', {
+                {'meta', charset='utf-8', false},
+                {'title', 'title'}
+            }},
+
+            {'body', {
+                {'h1', class='any', 
+                    'Sample text'..
+                    '<br>all what I always wanted!'
+                },
+                testpartial,
+
+                {'p', {
+                    'Text with no tags', 
+                    {'span', 'text on span'}
+                }},
+
+                [[<h4> Pure html tags </h4>
+                <p> Might be usefull for integrations </p>]]
+            }}
+        }}
+    }
+
+    return IndexPage
 
 And here is how i made the partial view:
 
-.. include:: tests/partials/testpartial.lua
+    local testpartial = 
+        {'div', class='test', {
+            {'h1', 'Title on partial'},
+            {'h2', 'Subtitle on partial'},
+            {'p', {
+                'Sample text on partial',
+                {'span', 'span on partial'}
+            }}
+        }}
+
+    return testpartial
 
 Then on a main file, I just printed the results
 
-.. include:: tests/test.lua
+    local lua_to_html = require('lua_to_html')
+    local index = require('./index')
+
+    print(lua_to_html:translate(index, true))
