@@ -58,7 +58,6 @@ The table to be used will be rendered this way:
 This is basically the hole logic behind.
 Here is a demonstration that should include all possibilities:
 
-<<<<<<< HEAD
     local testpartial = require('./partials/testpartial')
     local IndexPage = {
         {'!DOCTYPE html', false},
@@ -108,14 +107,3 @@ Then on a main file, I just printed the results
     local index = require('./index')
 
     print(lua_to_html:translate(index, true))
-=======
-include::tests/index.lua
-
-And here is how i made the partial view:
-
-include::tests/partials/testpartial.lua
-
-Then on a main file, I just printed the results
-
-include::tests/test.lua
->>>>>>> 33a4abfa719df4cb22c27a6c04c6197ce1972be8
