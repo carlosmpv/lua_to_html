@@ -4,7 +4,7 @@
 
 Lua to HTML is a template engine that translates lua tables into HTML code.
 
-*By example*:
+*For example*:
 
     {'div', class='container', {
         {'h1', 'Hello World!'},
