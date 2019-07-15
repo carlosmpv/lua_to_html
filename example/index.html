@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+		<link integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"/>
+		<title>
+			Exemple LTH (lua_to_html)
+		</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-light bg-light">
+			<a class="navbar-brand" href="#">
+				LTH - Lua To HTML
+			</a>
+		</nav>
+		<div class="container-fluid py-4">
+			<section class="py-4 my-4 px-2">
+				<h1>
+					Welcome
+				</h1>
+				<p class="lead">
+					Welcome to the example page
+				</p>
+				<hr/>
+				<div>
+					            This page was made entirely using Lua to HTML. <br>
+            The code behind can be found on <a href='http://github.com/carlosmpv/lua_to_html/example'>github.com/carlosmpv/lua_to_html/example</a><br>
+            <br>
+            Try the library and feel free to report issues.
+        
+				</div>
+			</section>
+			<section class="py-4 my-4 px-2">
+				<h1>
+					About this page
+				</h1>
+				<p class="lead">
+					This is only a demonstrative page
+				</p>
+				<hr/>
+				<div>
+					<div class="font-weight-bold">
+						Look at the code behind to see how this was made
+					</div>
+					In this example, was made a implementation of a possible router which os not really being used 
+					considering that it has no backend.
+					<br>
+					When reading this code, note that by using tables as function return you can implement logic on rendering.
+				</div>
+			</section>
+			<section class="py-4 my-4 px-2">
+				<h1>
+					Get Started
+				</h1>
+				<p class="lead">
+					How to use Lua to HTML
+				</p>
+				<hr/>
+				<div>
+					<div class="pb-4">
+						<div class="font-weight-bold">
+							Installation
+						</div>
+						Installing lua_to_html is simple. Just type on your terminal:
+						<div class="rounded bg-dark p-2">
+							<code class="text-light">
+								luarocks install lua_to_html
+							</code>
+						</div>
+					</div>
+					<div class="pb-4">
+						<div class="font-weight-bold">
+							Usage
+						</div>
+						To use this package just open a .lua file and import it on your project
+						<div class="rounded bg-dark p-2">
+							<code class="text-light">
+								local lua_to_html = require('lua_to_html')
+							</code>
+						</div>
+					</div>
+					<div class="pb-4">
+						<div class="font-weight-bold">
+							Rendering
+						</div>
+						There is only one important function on this module which is "translate".
+						<br>
+						It receives as parameters: a table and a boolean It returns a string containing the html code.
+						<br>
+						The table is the code to be translated, and the boolean should be true if the result must be idented or false if not.
+						<div class="rounded bg-dark p-2">
+							<code class="text-light">
+								local html = lua_to_html:translate(table_name, true)
+							</code>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="py-4 my-4 px-2">
+				<h1>
+					Remember
+				</h1>
+				<p class="lead">
+					This is just a example page
+				</p>
+				<hr/>
+				<div>
+					A full guide can be foun on
+					bbbb
+					<a href="http://github.com/carlosmpv/lua_to_html">
+						github.com/carlosmpv/lua_to_html
+					</a>
+					aaaaaaaa
+					<div>
+						<div>
+							teste
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<script integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" src="https://code.jquery.com/jquery-3.3.1.slim.min./js">
+			
+		</script>
+		<script integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+			
+		</script>
+		<script integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+			
+		</script>
+	</body>
+</html>
