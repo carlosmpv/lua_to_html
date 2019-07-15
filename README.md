@@ -4,7 +4,7 @@
 
 Lua to HTML is a template engine that translates lua tables into HTML code.
 
-*By example*:
+*For example*:
 
     {'div', class='container', {
         {'h1', 'Hello World!'},
@@ -48,14 +48,14 @@ The table is the code to be translated, and the boolean should be `true` if the 
 
 The table to be used will be rendered this way:
 
-* *for each element on table* \
-* *the first item will be the tag name* \
-* *the last item will be its children* \
-* *the named values will become the tag attributes* \
-* *if the last item is not a children, the tag will self close* \
+* *for each element on table*
+* *the first item will be the tag name* 
+* *the last item will be its children* 
+* *the named values will become the tag attributes* 
+* *if the last item is not a children, the tag will self close* 
 * *if the last item is a "false" the tag will not self close with /*
 
-This is basically the hole logic behind.
+This is basically the whole logic behind.
 Here is a demonstration that should include all possibilities:
 
     local testpartial = require('./partials/testpartial')
